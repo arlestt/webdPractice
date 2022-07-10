@@ -2,33 +2,33 @@ console.log('Loops!');
 
 //syntax is the same as c++
 let i;
-// for(i=1; i<=10; i++){
-//     console.log(i)
-// }
-// console.log('**********')
-// // for(i=1; i>=0; i++){
-// //     console.log(i)         [infinite loop]
-// // }
-
-// let names = ['manta', 'jj', 'thor', 'loki', 'tillu', 'anulok'];
-
-// for(i=0; i<names.length-1; i++){
-//     console.log(i, '->', names[i]);
+for(i=1; i<=10; i++){
+    console.log(i)
+}
+console.log('**********')
+// for(i=1; i>=0; i++){
+//     console.log(i)         [infinite loop]
 // }
 
-// for(i=0; i<names.length-1; i++){
-//     console.log(`${i} -> ${names[i]}`);
-// }//note that here the numbers are displayed as strings. (just my assumption lol!). 
-// //This is because of backticks(``)
+let names = ['manta', 'jj', 'thor', 'loki', 'tillu', 'anulok'];
 
-// //nested loops!
-// let m,n;
-// for(m=0; m<3; m++){
-//     console.log(`m -> ${m}`)
-//     for(n=5; n<7; n++){
-//         console.log(`   n -> ${n}`);
-//     }
-// }
+for(i=0; i<names.length-1; i++){
+    console.log(i, '->', names[i]);
+}
+
+for(i=0; i<names.length-1; i++){
+    console.log(`${i} -> ${names[i]}`);
+}//note that here the numbers are displayed as strings. (just my assumption lol!). 
+//This is because of backticks(``)
+
+//nested loops!
+let m,n;
+for(m=0; m<3; m++){
+    console.log(`m -> ${m}`)
+    for(n=5; n<7; n++){
+        console.log(`   n -> ${n}`);
+    }
+}
 
 let nums = [
     [1, 2, 3],
