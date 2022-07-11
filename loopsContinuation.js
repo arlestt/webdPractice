@@ -3,29 +3,29 @@ console.log("Loops Continuation!!");
 
 // **Guessing Game**
 // ****Rewatch the video once again!!! Introduced the term *parseInt* and has solved it in a different way.
-const number = 9;
-let count = 1;
-guess = prompt("guess the correct number!");
+// const number = 9;
+// let count = 1;
+// guess = prompt("guess the correct number!");
 
-while(guess != number){
-    count++;
-    if(guess < number){
-        guess = prompt("Try again, too low :(");
-    }
-    else if(guess > number)
-    guess = prompt("Try again, its too high :(");
+// while(guess != number){
+//     count++;
+//     if(guess < number){
+//         guess = prompt("Try again, too low :(");
+//     }
+//     else if(guess > number)
+//     guess = prompt("Try again, its too high :(");
 
-    else if(guess = "cue"){
-        break;
-    }
-}
+//     else if(guess = "cue"){
+//         break;
+//     }
+// }
 
-if(guess != "cue"){
-    console.log(`It took you ${count} guesses!`);
-}
-else if(guess = "cue"){
-    console.log("U quit!");
-}
+// if(guess != "cue"){
+//     console.log(`It took you ${count} guesses!`);
+// }
+// else if(guess = "cue"){
+//     console.log("U quit!");
+// }
 
 // **Doubt**
 // if(guess = "9")
@@ -80,3 +80,23 @@ for(let row of seatingChart){
     }
     c++;
 }
+
+//////////////////////////////////////////////////////////
+
+// **for....in loops**
+// *for..of* is used all the time and *for..in* is going to iterate over objects.
+
+  const scores = {
+    kami: 80,
+    kira: 95,
+    mika: 65,
+    nika: 86
+  }
+
+  for(let person in scores){
+    console.log(`${person} scored ${scores[person]}`)
+  }
+
+console.log(Object.keys(scores));
+console.log(Object.values(scores));
+console.log(Object.entries(scores));
