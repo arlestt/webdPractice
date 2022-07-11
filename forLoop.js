@@ -68,3 +68,15 @@ for(i=0; i<seatingChart.length; i++){
         console.log(` - ${row[j]}`);
     }
 }
+
+//*while loops*
+let count = 0;
+while(count<10){
+    count++; 
+    console.log(count);
+}
+
+let code = "jj";
+do{
+    guess = prompt("enter your secret code");
+}while(guess != code);
