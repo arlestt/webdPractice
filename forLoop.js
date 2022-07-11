@@ -30,6 +30,7 @@ for(m=0; m<3; m++){
     }
 }
 
+//To print all the elements in a multidimensional array.
 let nums = [
     [1, 2, 3],
     [4, 5, 6, 7],
