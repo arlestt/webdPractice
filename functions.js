@@ -24,5 +24,31 @@ let c;
 function greet(c){
     console.log(`Hi ${c} :)`);
 }
+// greet(prompt("enter a name")); *********
 
-greet(prompt("enter a name"));
+
+//                      ****NEW MODULE (21) [scopes]****
+function totaleggs(){
+    let eggcount = 6;
+    console.log(eggcount);
+}
+// console.log(eggcount); //ERROR
+totaleggs();
+
+let bird = "maca";
+function shout(){
+    let bird  = "peeka";  
+}
+shout();
+console.log(bird);   //observe that the name printed is maca
+
+
+let radius = 8;
+if(radius>0){
+    const PI = 3.14;
+}
+console.log(radius);
+//console.log(PI);   //ERROR
+ 
+
+
