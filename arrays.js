@@ -47,3 +47,25 @@ console.log(dogs);
 
 
 
+//       *******ARRAY METHODS*******
+
+//foreach method : accepts a callback function. calls the function once per element in the array.
+const nums = [1, 2, 3, 4, 5, 6, 7];
+
+nums.forEach(function(n){
+    console.log(n*n); //prints the sqr of each element
+});
+nums.forEach(function(el){
+    if(el%2 === 0) console.log(el);  
+});
+
+
+//map method : creates a new array with the results of calling a callback on ebery element in the array. 
+const even = nums.map(function(t){
+     return t*5;
+})
+console.log(even);
+
+
+
+
