@@ -102,4 +102,43 @@ above50();
 
 //       *****OR*****
 
-console.log(Math.floor(Math.random()*51) + 50)  //range between 50 and 100 is 50, add 1 to it.
+console.log(Math.floor(Math.random()*51) + 50)  //range between 50 and 100 is 50, add 1 to it.\
+
+
+//METHODS   
+let mymath1 = {
+    add: function(x,y){
+        return x+y
+    }, 
+    sqr: function(x){
+        return x*x
+    },
+}
+console.log(mymath1.add(4,5));
+
+let mymath2 = {
+    cube(x){               //shorthand method
+        return x**3
+    }
+}
+console.log(mymath2.cube(5));
+
+////CHECK THE VIDEO FOR THE *THIS* KEYWORD
+
+
+//    ****try/catch
+try{
+    hello.toUpperCase()  //error
+} catch{
+    console.log("There was an error! But the code will continue coz of this function.")
+}
+
+function yell(msg){
+    try{
+        console.log(msg.toUpperCase().repeat(3))
+    } catch (e) {
+        console.log(e);  //catches the error
+        console.log("Please pass a string next line.");
+    }
+}
+console.log(yell(4));
