@@ -4,7 +4,7 @@ console.log("Functions!!");
 random = Math.random();
 console.log(random);
 //to print between 1 to 10
-random = Math.floor(Math.random()*6 + 1);
+random = Math.floor(Math.random()*10 + 1);
 console.log(random);
 
 //a function to roll a die
@@ -49,6 +49,57 @@ if(radius>0){
 }
 console.log(radius);
 //console.log(PI);   //ERROR
+
+
+function robbery(){
+    let heroes = ["Thor", "Loki", "Hulk"];
+    function cryForHelp(){
+        for(let hero of heroes){
+            console.log(`Pls help ${hero.toUpperCase()}`);
+        }
+    }
+    cryForHelp();
+}
+robbery();
  
 
+// ***FUNCTION EXPRESSIONS***
 
+// function add(x, y){
+//     return (x+y);
+// }
+
+let add = function(x, y){
+    return(x+y);
+}
+console.log(add(4, 3));
+
+
+
+function callTwice(func){
+    func();
+    func();
+}
+
+function printRollDie(){
+    roll = rollDie(6);
+    console.log(roll)
+}
+callTwice(printRollDie)
+
+// FUNCTION TO PRINT A NUMBER BETWEEN 50 AND 100
+function above50(){
+    while(1){
+        let guess = rollDie(100);
+        if(guess<50) continue;
+        else{
+            console.log(guess);
+            break;
+        }
+    };
+}
+above50();
+
+//       *****OR*****
+
+console.log(Math.floor(Math.random()*51) + 50)  //range between 50 and 100 is 50, add 1 to it.
