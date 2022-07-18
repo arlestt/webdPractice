@@ -53,19 +53,70 @@ console.log(dogs);
 const nums = [1, 2, 3, 4, 5, 6, 7];
 
 nums.forEach(function(n){
-    console.log(n*n); //prints the sqr of each element
+    console.log(n*n); //prints the sqr of each element.
 });
 nums.forEach(function(el){
     if(el%2 === 0) console.log(el);  
 });
 
 
-//map method : creates a new array with the results of calling a callback on ebery element in the array. 
+//map method : creates a new array with the results of calling a callback on every element in the array. 
 const even = nums.map(function(t){
      return t*5;
 })
-console.log(even);
+console.log(even); 
+
+const movies = [
+    {
+        title: 'amadeus',
+        score: '99'
+    },
+    {
+        title: 'thor',
+        score: '78'
+    },
+    {
+        title: 'loki',
+        score: '87'
+    }
+]
+const titles1 = movies.map(function(movie){
+    return movie.title.toUpperCase();
+})
+console.log(titles1);
 
 
+//arrow functions
+const sqr = (x) => {
+    return x*x;
+}
+console.log(sqr(4));
+console.log(sqr);
+
+const sqr2 = num => {    
+    return num*num;
+}  // can omit parentheses if the name is more than one letter.
+console.log(sqr2);
+
+const titles2 = movies.map((movie)=>{
+    return (`${movie.title.toUpperCase()} 2`);
+})
+console.log(titles2);
 
 
+//arrow functions implicit functions
+//only works when there is only one value to return.
+const sqr3 = num => (   
+    num*num
+) //we can omit *return* if we use parentheses instead of curly braces.
+console.log(sqr3(9));
+
+const add1 = (a,b) => a+b 
+//one line implicit function.
+console.log(add1(4,5));
+
+const titles3 = movies.map((movie)=>(`${movie.title.toUpperCase()} 3`))
+console.log(titles3);
+
+const newList = movies.map((movie)=>(`${movie.title} -> ${movie.score} `))
+console.log(newList);
