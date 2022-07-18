@@ -120,3 +120,46 @@ console.log(titles3);
 
 const newList = movies.map((movie)=>(`${movie.title} -> ${movie.score} `))
 console.log(newList);
+
+
+
+// ***setTimeout and setInterval*** refer the videos. Not doing it blehhhh :)
+
+
+
+//filter method : creates a new array with all elements that pass the test implemented by the provided function.  
+
+//const nums = [1, 2, 3, 4, 5, 6, 7]; => DECLARED ABOVE
+const odds = nums.filter(num => num%2 === 1)
+console.log(odds)
+
+const goodMovies = movies.filter(m => m.score > 80)
+console.log(goodMovies);
+
+//using both filter and map to print only the titles of the good movies.
+const goodTitles = movies.filter(m => m.score > 80).map(m => `${m.title} -> ${m.score}`)
+console.log(goodTitles)
+
+
+
+// every method : tests whether all elements in the array pass the provided function. It retursns a boolean value.
+// some method : similar to every, but returns true if ANY of the array elements pass the test function.
+//        REFER TO THE VIDEOS. LAZY ASF BLEHHHH !
+
+
+
+// reduce method : executes a reducer function on each element of the array, resulthing in a single value.
+const total = nums.reduce((total, price) => total + price)
+
+//we can also find minimum number using this method.
+const min = nums.reduce((min, ele)=> {
+    if(min<ele) return min;
+    else return ele; 
+})
+
+const evens = [2, 4, 6, 8];
+const evensSum = evens.reduce((sum, ele) => sum+ele, 100)
+//anything declared in the second argurment will be taken as the initial value.
+
+
+// ***ARROW FUNCTIONS AND THIS*** refer to the video. BLEHHHH !!
